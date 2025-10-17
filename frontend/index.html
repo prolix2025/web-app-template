@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Web App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="container">
+    <section class="card" role="region" aria-labelledby="app-title">
+      <img
+        src="./logo.svg"
+        alt="App logo"
+        class="logo"
+        onerror="this.style.display='none';"
+      />
+      <h1 id="app-title" class="title">Your Web App</h1>
+      <p class="subtext">A short sub-text goes here explaining what to type below.</p>
+
+      <form id="main-form" class="form" novalidate>
+        <label for="user-input" class="sr-only">Your input</label>
+        <input
+          id="user-input"
+          name="user_input"
+          type="text"
+          placeholder="Type something…"
+          autocomplete="off"
+          required
+        />
+        <button type="submit">Continue</button>
+        <p id="form-help" class="help" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="./app.js" defer></script>
+</body>
+</html>
